@@ -1,0 +1,964 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{7B285B0E-DABA-4921-A6E9-023E3C84AA9E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CPS2016</RootNamespace>
+    <AssemblyName>CPS2016</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CPS2016.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CPS2016.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AllcardEncryptDecrypt, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AllcardEncryptDecrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="GenCode128">
+      <HintPath>C:\Users\EDEL2\Downloads\Compressed\GenCode128_2\GenCode128\Sample\bin\Debug\GenCode128.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\DCS2015\DCS2015\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Neodynamic.WebControls.BarcodeProfessional, Version=8.0.2000.0, Culture=neutral, PublicKeyToken=c6b33c3093a0d4cd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\EDEL2\Downloads\Compressed\BarcodeInHTMLPageVB\Neodynamic.WebControls.BarcodeProfessional.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CDFR\ForUploadCDFR.aspx.designer.vb">
+      <DependentUpon>ForUploadCDFR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CDFR\ForUploadCDFR.aspx.vb">
+      <DependentUpon>ForUploadCDFR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Class\Barcode39.vb" />
+    <Compile Include="Class\BarcodeWeb.vb" />
+    <Compile Include="Class\BarcodeWeb2.vb" />
+    <Compile Include="Class\CDFR_Reader.vb" />
+    <Compile Include="Class\CMS_Report.vb" />
+    <Compile Include="Class\DAL.vb" />
+    <Compile Include="Class\DataKeysEnum.vb" />
+    <Compile Include="Class\EncryptDecryptData.vb" />
+    <Compile Include="Class\FileCompression.vb" />
+    <Compile Include="Class\MemberXML.vb" />
+    <Compile Include="Class\PurchaseOrderReport.vb" />
+    <Compile Include="Class\RptGenerator.vb" />
+    <Compile Include="Class\SharedFunction.vb" />
+    <Compile Include="CardControl.aspx.designer.vb">
+      <DependentUpon>CardControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardControl.aspx.vb">
+      <DependentUpon>CardControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Class\Simple3Des.vb" />
+    <Compile Include="ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMSReprint.aspx.designer.vb">
+      <DependentUpon>CMSReprint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMSReprint.aspx.vb">
+      <DependentUpon>CMSReprint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeStatusByList.aspx.designer.vb">
+      <DependentUpon>ChangeStatusByList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeStatusByList.aspx.vb">
+      <DependentUpon>ChangeStatusByList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcknowledgeFile.aspx.designer.vb">
+      <DependentUpon>AcknowledgeFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcknowledgeFile.aspx.vb">
+      <DependentUpon>AcknowledgeFile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CMS\ForUploadCMSReject.aspx.designer.vb">
+      <DependentUpon>ForUploadCMSReject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMS\ForUploadCMSReject.aspx.vb">
+      <DependentUpon>ForUploadCMSReject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ForUpload_CMSReprint.aspx.designer.vb">
+      <DependentUpon>ForUpload_CMSReprint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForUpload_CMSReprint.aspx.vb">
+      <DependentUpon>ForUpload_CMSReprint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryReceiptExcludedList.aspx.designer.vb">
+      <DependentUpon>DeliveryReceiptExcludedList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryReceiptExcludedList.aspx.vb">
+      <DependentUpon>DeliveryReceiptExcludedList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportD_DeliveryReceipt.aspx.designer.vb">
+      <DependentUpon>ReportD_DeliveryReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportD_DeliveryReceipt.aspx.vb">
+      <DependentUpon>ReportD_DeliveryReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryReceiptByScan.aspx.designer.vb">
+      <DependentUpon>DeliveryReceiptByScan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryReceiptByScan.aspx.vb">
+      <DependentUpon>DeliveryReceiptByScan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rpt\RptCardCarrier_UBP.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptCardCarrier_UBP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\RptCertiOfDeletion_v3.vb">
+      <DependentUpon>RptCertiOfDeletion_v3.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rpt\RptCertiOfDeletion_v5_manual.vb">
+      <DependentUpon>RptCertiOfDeletion_v5_manual.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rpt\ReportD_DeliveryReceipt_PDF.vb">
+      <DependentUpon>ReportD_DeliveryReceipt_PDF.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rpt\RptDR.vb">
+      <DependentUpon>RptDR.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="EditNamesAddress.aspx.designer.vb">
+      <DependentUpon>EditNamesAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditNamesAddress.aspx.vb">
+      <DependentUpon>EditNamesAddress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="StatusCardByPO.aspx.designer.vb">
+      <DependentUpon>StatusCardByPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatusCardByPO.aspx.vb">
+      <DependentUpon>StatusCardByPO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MiscTxn.aspx.designer.vb">
+      <DependentUpon>MiscTxn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MiscTxn.aspx.vb">
+      <DependentUpon>MiscTxn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForUpload2.aspx.designer.vb">
+      <DependentUpon>ForUpload2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForUpload2.aspx.vb">
+      <DependentUpon>ForUpload2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.vb">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.vb">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MiscReports.aspx.designer.vb">
+      <DependentUpon>MiscReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MiscReports.aspx.vb">
+      <DependentUpon>MiscReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PendingForProcessSheet.aspx.designer.vb">
+      <DependentUpon>PendingForProcessSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PendingForProcessSheet.aspx.vb">
+      <DependentUpon>PendingForProcessSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POReports.aspx.designer.vb">
+      <DependentUpon>POReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="POReports.aspx.vb">
+      <DependentUpon>POReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QA_GoodRejectTagging\SearchSubmittedQAGoodReject.aspx.designer.vb">
+      <DependentUpon>SearchSubmittedQAGoodReject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QA_GoodRejectTagging\SearchSubmittedQAGoodReject.aspx.vb">
+      <DependentUpon>SearchSubmittedQAGoodReject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QA_GoodRejectTagging\SubmittedQAGoodReject.aspx.designer.vb">
+      <DependentUpon>SubmittedQAGoodReject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QA_GoodRejectTagging\SubmittedQAGoodReject.aspx.vb">
+      <DependentUpon>SubmittedQAGoodReject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportA_CreatedPrintOrderForm.aspx.designer.vb">
+      <DependentUpon>ReportA_CreatedPrintOrderForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportA_CreatedPrintOrderForm.aspx.vb">
+      <DependentUpon>ReportA_CreatedPrintOrderForm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Rpt\SelectPurchaseOrder.aspx.designer.vb">
+      <DependentUpon>SelectPurchaseOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt\SelectPurchaseOrder.aspx.vb">
+      <DependentUpon>SelectPurchaseOrder.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Rpt\RptCertiOfDeletion_v2.vb">
+      <DependentUpon>RptCertiOfDeletion_v2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rpt\RptRejectCertificationWholePage.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptRejectCertificationWholePage.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\RptRejectReportByPO.vb">
+      <DependentUpon>RptRejectReportByPO.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rpt\RptRejectReport.vb">
+      <DependentUpon>RptRejectReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\RptMaterialInventory.vb">
+      <DependentUpon>RptMaterialInventory.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rpt\Inspection_QC_YieldReportForm.aspx.designer.vb">
+      <DependentUpon>Inspection_QC_YieldReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt\Inspection_QC_YieldReportForm.aspx.vb">
+      <DependentUpon>Inspection_QC_YieldReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Rpt\RptInspection_QC_YieldReport.vb">
+      <DependentUpon>RptInspection_QC_YieldReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rpt\ReportC_InitialPrintAndReprintRequest.vb">
+      <DependentUpon>ReportC_InitialPrintAndReprintRequest.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rpt\PDFViewer.aspx.designer.vb">
+      <DependentUpon>PDFViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt\PDFViewer.aspx.vb">
+      <DependentUpon>PDFViewer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Rpt\ReportA_CreatedPrintOrder.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportA_CreatedPrintOrder.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\RptSubRejectCertification.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptSubRejectCertification.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\SubRptRelPOMatMaterial.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubRptRelPOMatMaterial.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StatusCardBreakdown.aspx.designer.vb">
+      <DependentUpon>StatusCardBreakdown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatusCardBreakdown.aspx.vb">
+      <DependentUpon>StatusCardBreakdown.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MsgPage.aspx.designer.vb">
+      <DependentUpon>MsgPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MsgPage.aspx.vb">
+      <DependentUpon>MsgPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryReceipt.aspx.designer.vb">
+      <DependentUpon>DeliveryReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryReceipt.aspx.vb">
+      <DependentUpon>DeliveryReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rpt\RptCertiOfDeletion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptCertiOfDeletion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SystemParameter.aspx.designer.vb">
+      <DependentUpon>SystemParameter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemParameter.aspx.vb">
+      <DependentUpon>SystemParameter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoleActivity.aspx.designer.vb">
+      <DependentUpon>RoleActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RoleActivity.aspx.vb">
+      <DependentUpon>RoleActivity.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\AllotedMaterialsBreakdown.aspx.designer.vb">
+      <DependentUpon>AllotedMaterialsBreakdown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\AllotedMaterialsBreakdown.aspx.vb">
+      <DependentUpon>AllotedMaterialsBreakdown.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\Inventory.aspx.designer.vb">
+      <DependentUpon>Inventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Inventory.aspx.vb">
+      <DependentUpon>Inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoggedUsers.aspx.designer.vb">
+      <DependentUpon>LoggedUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoggedUsers.aspx.vb">
+      <DependentUpon>LoggedUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\Home_Inventory.aspx.designer.vb">
+      <DependentUpon>Home_Inventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Home_Inventory.aspx.vb">
+      <DependentUpon>Home_Inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\Material.aspx.designer.vb">
+      <DependentUpon>Material.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Material.aspx.vb">
+      <DependentUpon>Material.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\AddMaterialQty.aspx.designer.vb">
+      <DependentUpon>AddMaterialQty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\AddMaterialQty.aspx.vb">
+      <DependentUpon>AddMaterialQty.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\ProcessedPOMat.aspx.designer.vb">
+      <DependentUpon>ProcessedPOMat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProcessedPOMat.aspx.vb">
+      <DependentUpon>ProcessedPOMat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\NewPOMatProcess.aspx.designer.vb">
+      <DependentUpon>NewPOMatProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\NewPOMatProcess.aspx.vb">
+      <DependentUpon>NewPOMatProcess.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QA_GoodRejectTagging\ProcessedQAGoodReject.aspx.designer.vb">
+      <DependentUpon>ProcessedQAGoodReject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QA_GoodRejectTagging\ProcessedQAGoodReject.aspx.vb">
+      <DependentUpon>ProcessedQAGoodReject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QA_GoodRejectTagging\QAGoodRejectTagging.aspx.designer.vb">
+      <DependentUpon>QAGoodRejectTagging.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QA_GoodRejectTagging\QAGoodRejectTagging.aspx.vb">
+      <DependentUpon>QAGoodRejectTagging.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rpt\ReportG_GoodCards.vb">
+      <DependentUpon>ReportG_GoodCards.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Rpt\ReportE_DlvrdCrdsPerPO.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportE_DlvrdCrdsPerPO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt\RptViewer.aspx.designer.vb">
+      <DependentUpon>RptViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt\RptViewer.aspx.vb">
+      <DependentUpon>RptViewer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="TrackData.aspx.designer.vb">
+      <DependentUpon>TrackData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrackData.aspx.vb">
+      <DependentUpon>TrackData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_CPS.aspx.designer.vb">
+      <DependentUpon>Home_CPS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_CPS.aspx.vb">
+      <DependentUpon>Home_CPS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemLogs.aspx.designer.vb">
+      <DependentUpon>SystemLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemLogs.aspx.vb">
+      <DependentUpon>SystemLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorLogs.aspx.designer.vb">
+      <DependentUpon>ErrorLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLogs.aspx.vb">
+      <DependentUpon>ErrorLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoleModule.aspx.designer.vb">
+      <DependentUpon>RoleModule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RoleModule.aspx.vb">
+      <DependentUpon>RoleModule.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="SystemModule.aspx.designer.vb">
+      <DependentUpon>SystemModule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemModule.aspx.vb">
+      <DependentUpon>SystemModule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RejectCard.aspx.designer.vb">
+      <DependentUpon>RejectCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RejectCard.aspx.vb">
+      <DependentUpon>RejectCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Role.aspx.designer.vb">
+      <DependentUpon>Role.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Role.aspx.vb">
+      <DependentUpon>Role.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogIn\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.vb">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.vb">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurgeData.aspx.designer.vb">
+      <DependentUpon>PurgeData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurgeData.aspx.vb">
+      <DependentUpon>PurgeData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownloadFile.aspx.designer.vb">
+      <DependentUpon>DownloadFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadFile.aspx.vb">
+      <DependentUpon>DownloadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndigoDataForPrinting.aspx.designer.vb">
+      <DependentUpon>IndigoDataForPrinting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndigoDataForPrinting.aspx.vb">
+      <DependentUpon>IndigoDataForPrinting.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="IndigoExtract.aspx.designer.vb">
+      <DependentUpon>IndigoExtract.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndigoExtract.aspx.vb">
+      <DependentUpon>IndigoExtract.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PendingForProcess.aspx.designer.vb">
+      <DependentUpon>PendingForProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PendingForProcess.aspx.vb">
+      <DependentUpon>PendingForProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForUpload.aspx.designer.vb">
+      <DependentUpon>ForUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForUpload.aspx.vb">
+      <DependentUpon>ForUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Light.master.designer.vb">
+      <DependentUpon>Light.master</DependentUpon>
+    </Compile>
+    <Compile Include="Light.master.vb">
+      <DependentUpon>Light.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.master.designer.vb">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="Main.master.vb">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Root.master.designer.vb">
+      <DependentUpon>Root.master</DependentUpon>
+    </Compile>
+    <Compile Include="Root.master.vb">
+      <DependentUpon>Root.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRole.aspx.designer.vb">
+      <DependentUpon>UserRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRole.aspx.vb">
+      <DependentUpon>UserRole.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Users.aspx.designer.vb">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users.aspx.vb">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\RptCardCarrier_UBP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCardCarrier_UBP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\RptCertiOfDeletion_v3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCertiOfDeletion_v3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\RptCertiOfDeletion_v5_manual.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCertiOfDeletion_v5_manual.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\ReportD_DeliveryReceipt_PDF.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportD_DeliveryReceipt_PDF.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\RptDR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptDR.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\RptCertiOfDeletion_v2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCertiOfDeletion_v2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\RptRejectCertificationWholePage.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRejectCertificationWholePage.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\RptRejectReportByPO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRejectReportByPO.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\RptRejectReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRejectReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\RptMaterialInventory.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptMaterialInventory.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\RptInspection_QC_YieldReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInspection_QC_YieldReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\ReportC_InitialPrintAndReprintRequest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportC_InitialPrintAndReprintRequest.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\ReportA_CreatedPrintOrder.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportA_CreatedPrintOrder.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\ReportG_GoodCards.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportG_GoodCards.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\ReportE_DlvrdCrdsPerPO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportE_DlvrdCrdsPerPO.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\RptCertiOfDeletion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCertiOfDeletion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\RptSubRejectCertification.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSubRejectCertification.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt\SubRptRelPOMatMaterial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SubRptRelPOMatMaterial.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CDFR\ForUploadCDFR.aspx" />
+    <Content Include="CMS\ForUploadCMSReject.aspx" />
+    <Content Include="Content\Images\admin.ico" />
+    <Content Include="Content\Images\AquaHeader.jpg" />
+    <Content Include="Content\Images\BlackGlassHeader.jpg" />
+    <Content Include="Content\Images\changepassword.ico" />
+    <Content Include="Content\Images\client.ico" />
+    <Content Include="Content\Images\data_delete.ico" />
+    <Content Include="Content\Images\errorlog.ico" />
+    <Content Include="Content\Images\GlassHeader.jpg" />
+    <Content Include="Content\Images\images.jpg" />
+    <Content Include="Content\Images\indigoextract.ico" />
+    <Content Include="Content\Images\inventory.ico" />
+    <Content Include="Content\Images\log.png" />
+    <Content Include="Content\Images\login submit 01.png" />
+    <Content Include="Content\Images\logout.ico" />
+    <Content Include="Content\Images\material.ico" />
+    <Content Include="Content\Images\module.ico" />
+    <Content Include="Content\Images\onlineuser.ico" />
+    <Content Include="Content\Images\PlasticBlueHeader.jpg" />
+    <Content Include="Content\Images\processcard.ico" />
+    <Content Include="Content\Images\process_inv.ico" />
+    <Content Include="Content\Images\profile.ico" />
+    <Content Include="Content\Images\project.ico" />
+    <Content Include="Content\Images\qa_card.ico" />
+    <Content Include="Content\Images\RedWineHeader.jpg" />
+    <Content Include="Content\Images\refresh.png" />
+    <Content Include="Content\Images\rejectcard.ico" />
+    <Content Include="Content\Images\SSS_logo_PH.svg_24x24.png" />
+    <Content Include="Content\Images\SSS_logo_PH.svg_32x32.png" />
+    <Content Include="Content\Images\status.ico" />
+    <Content Include="Content\Images\systemadmin.ico" />
+    <Content Include="Content\Images\systemlog.ico" />
+    <Content Include="Content\Images\systemparameter.ico" />
+    <Content Include="Content\Images\upload.ico" />
+    <Content Include="Content\Images\user.png" />
+    <Content Include="Content\Images\xls.png" />
+    <Content Include="CardControl.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="CMSReprint.aspx" />
+    <Content Include="ChangeStatusByList.aspx" />
+    <Content Include="AcknowledgeFile.aspx" />
+    <Content Include="ForUpload_CMSReprint.aspx" />
+    <Content Include="DeliveryReceiptExcludedList.aspx" />
+    <Content Include="ReportD_DeliveryReceipt.aspx" />
+    <Content Include="DeliveryReceiptByScan.aspx" />
+    <Content Include="EditNamesAddress.aspx" />
+    <Content Include="StatusCardByPO.aspx" />
+    <Content Include="MiscTxn.aspx" />
+    <Content Include="ForUpload2.aspx" />
+    <Content Include="Help.aspx" />
+    <Content Include="MiscReports.aspx" />
+    <Content Include="PendingForProcessSheet.aspx" />
+    <Content Include="POReports.aspx" />
+    <Content Include="QA_GoodRejectTagging\SearchSubmittedQAGoodReject.aspx" />
+    <Content Include="QA_GoodRejectTagging\SubmittedQAGoodReject.aspx" />
+    <Content Include="ReportA_CreatedPrintOrderForm.aspx" />
+    <Content Include="Rpt\SelectPurchaseOrder.aspx" />
+    <Content Include="Rpt\Inspection_QC_YieldReportForm.aspx" />
+    <Content Include="Rpt\PDFViewer.aspx" />
+    <Content Include="StatusCardBreakdown.aspx" />
+    <Content Include="MsgPage.aspx" />
+    <Content Include="DeliveryReceipt.aspx" />
+    <Content Include="SystemParameter.aspx" />
+    <Content Include="RoleActivity.aspx" />
+    <Content Include="Inventory\AllotedMaterialsBreakdown.aspx" />
+    <Content Include="Inventory\Inventory.aspx" />
+    <Content Include="LoggedUsers.aspx" />
+    <Content Include="Inventory\Home_Inventory.aspx" />
+    <Content Include="Inventory\Material.aspx" />
+    <Content Include="Inventory\AddMaterialQty.aspx" />
+    <Content Include="Inventory\ProcessedPOMat.aspx" />
+    <Content Include="Inventory\NewPOMatProcess.aspx" />
+    <Content Include="QA_GoodRejectTagging\ProcessedQAGoodReject.aspx" />
+    <Content Include="QA_GoodRejectTagging\QAGoodRejectTagging.aspx" />
+    <Content Include="Rpt\RptViewer.aspx" />
+    <Content Include="TrackData.aspx" />
+    <Content Include="Home_CPS.aspx" />
+    <Content Include="SystemLogs.aspx" />
+    <Content Include="ErrorLogs.aspx" />
+    <Content Include="RoleModule.aspx" />
+    <Content Include="SystemModule.aspx" />
+    <Content Include="RejectCard.aspx" />
+    <Content Include="Role.aspx" />
+    <Content Include="LogIn\css\animate.css" />
+    <Content Include="LogIn\css\reset.css" />
+    <Content Include="LogIn\css\styles.css" />
+    <Content Include="LogIn\Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="PurgeData.aspx" />
+    <Content Include="DownloadFile.aspx" />
+    <Content Include="IndigoDataForPrinting.aspx" />
+    <Content Include="IndigoExtract.aspx" />
+    <Content Include="PendingForProcess.aspx" />
+    <Content Include="ForUpload.aspx" />
+    <Content Include="Light.master" />
+    <Content Include="Main.master" />
+    <Content Include="UserRole.aspx" />
+    <Content Include="Users.aspx" />
+    <Content Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Root.master" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <!--<Content Include="Site.Master" />-->
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Site.css" />
+    <Content Include="Global.asax" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Image\" />
+    <Folder Include="Temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <!--<ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2735</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

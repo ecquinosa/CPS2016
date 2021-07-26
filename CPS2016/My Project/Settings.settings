@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="UserDefPsswrd" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">cps2016</Value>
+    </Setting>
+    <Setting Name="Server" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">192.168.40.10</Value>
+    </Setting>
+    <Setting Name="Database" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbcCPS2016</Value>
+    </Setting>
+    <Setting Name="User" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SSS_APP</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Georgina#</Value>
+    </Setting>
+    <Setting Name="MainRepository" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\WORK\Allcard\SSS_CPS</Value>
+    </Setting>
+    <Setting Name="FName_Limit_Laser" Type="System.Int16" Scope="Application">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="LName_Limit_Laser" Type="System.Int16" Scope="Application">
+      <Value Profile="(Default)">27</Value>
+    </Setting>
+    <Setting Name="Address_Limit_Laser" Type="System.Int16" Scope="Application">
+      <Value Profile="(Default)">27</Value>
+    </Setting>
+    <Setting Name="IndigoExtractRepository" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\WORK\Projects\Published Website\CPS2016</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AcknowledgeFile.aspx">
+      <publishTime>05/15/2019 15:28:51</publishTime>
+    </File>
+    <File Include="bin/AllcardEncryptDecrypt.dll">
+      <publishTime>07/18/2013 06:20:56</publishTime>
+    </File>
+    <File Include="bin/CPS2016.dll">
+      <publishTime>07/17/2020 10:56:33</publishTime>
+    </File>
+    <File Include="bin/CPS2016.pdb">
+      <publishTime>07/17/2020 10:56:33</publishTime>
+    </File>
+    <File Include="bin/CPS2016.xml">
+      <publishTime>07/17/2020 10:56:32</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.CrystalReports.Engine.dll">
+      <publishTime>01/09/2018 07:13:38</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.ClientDoc.dll">
+      <publishTime>01/09/2018 07:13:38</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.CommLayer.dll">
+      <publishTime>01/09/2018 07:13:38</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.CommonControls.dll">
+      <publishTime>01/09/2018 07:13:38</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.CommonObjectModel.dll">
+      <publishTime>01/09/2018 07:13:38</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.Controllers.dll">
+      <publishTime>01/09/2018 07:13:38</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.CubeDefModel.dll">
+      <publishTime>01/09/2018 07:13:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.DataDefModel.dll">
+      <publishTime>01/09/2018 07:13:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.DataSetConversion.dll">
+      <publishTime>01/09/2018 07:13:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.ObjectFactory.dll">
+      <publishTime>01/09/2018 07:13:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.Prompting.dll">
+      <publishTime>01/09/2018 07:13:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.ReportDefModel.dll">
+      <publishTime>01/09/2018 07:13:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.XmlSerialize.dll">
+      <publishTime>01/09/2018 07:13:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportSource.dll">
+      <publishTime>01/09/2018 07:13:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.Shared.dll">
+      <publishTime>01/09/2018 07:13:40</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Data.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:48</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Office.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Printing.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.RichEdit.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Sparkline.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Utils.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Web.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:45</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraBars.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraEditors.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraPrinting.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraTreeList.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Data.v14.1.dll">
+      <publishTime>12/27/2019 10:50:48</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Office.v14.1.Core.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Printing.v14.1.Core.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/DevExpress.RichEdit.v14.1.Core.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Sparkline.v14.1.Core.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Utils.v14.1.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxThemes.v14.1.dll">
+      <publishTime>12/27/2019 10:50:47</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.v14.1.dll">
+      <publishTime>12/27/2019 10:50:45</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraBars.v14.1.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraEditors.v14.1.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraPrinting.v14.1.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraTreeList.v14.1.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Data.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:48</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Office.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Printing.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.RichEdit.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Sparkline.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Utils.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Web.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:45</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraBars.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraEditors.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraPrinting.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraTreeList.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/GenCode128.dll">
+      <publishTime>06/10/2006 10:57:22</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>05/25/2010 12:55:22</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Data.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:48</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Office.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Printing.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.RichEdit.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Sparkline.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Utils.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Web.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:45</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraBars.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraEditors.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraPrinting.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraTreeList.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/Neodynamic.WebControls.BarcodeProfessional.dll">
+      <publishTime>01/28/2016 08:04:12</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Data.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:48</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Office.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Printing.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.RichEdit.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Sparkline.v14.1.Core.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Utils.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Web.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:45</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraBars.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:51</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraEditors.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraPrinting.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraTreeList.v14.1.resources.dll">
+      <publishTime>12/27/2019 10:50:54</publishTime>
+    </File>
+    <File Include="bin/stdole.dll">
+      <publishTime>02/19/2011 23:39:42</publishTime>
+    </File>
+    <File Include="CardControl.aspx">
+      <publishTime>06/04/2019 18:23:18</publishTime>
+    </File>
+    <File Include="CDFR/ForUploadCDFR.aspx">
+      <publishTime>11/07/2018 16:17:42</publishTime>
+    </File>
+    <File Include="ChangePassword.aspx">
+      <publishTime>03/04/2016 19:36:20</publishTime>
+    </File>
+    <File Include="ChangeStatusByList.aspx">
+      <publishTime>01/26/2018 15:32:45</publishTime>
+    </File>
+    <File Include="Class/PurchaseOrderReport.vb">
+      <publishTime>08/12/2019 12:22:39</publishTime>
+    </File>
+    <File Include="CMS/ForUploadCMSReject.aspx">
+      <publishTime>05/15/2019 11:37:52</publishTime>
+    </File>
+    <File Include="CMSReprint.aspx">
+      <publishTime>08/22/2016 14:48:50</publishTime>
+    </File>
+    <File Include="Content/Images/admin.ico">
+      <publishTime>02/16/2016 18:09:08</publishTime>
+    </File>
+    <File Include="Content/Images/AquaHeader.jpg">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/BlackGlassHeader.jpg">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/changepassword.ico">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/client.ico">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/data_delete.ico">
+      <publishTime>02/16/2016 17:02:48</publishTime>
+    </File>
+    <File Include="Content/Images/errorlog.ico">
+      <publishTime>02/16/2016 17:21:26</publishTime>
+    </File>
+    <File Include="Content/Images/GlassHeader.jpg">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/images.jpg">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/indigoextract.ico">
+      <publishTime>02/16/2016 16:53:50</publishTime>
+    </File>
+    <File Include="Content/Images/inventory.ico">
+      <publishTime>02/16/2016 17:02:48</publishTime>
+    </File>
+    <File Include="Content/Images/log.png">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/login submit 01.png">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/logout.ico">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/material.ico">
+      <publishTime>02/16/2016 17:21:26</publishTime>
+    </File>
+    <File Include="Content/Images/module.ico">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/onlineuser.ico">
+      <publishTime>03/07/2016 18:24:54</publishTime>
+    </File>
+    <File Include="Content/Images/PlasticBlueHeader.jpg">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/processcard.ico">
+      <publishTime>02/16/2016 16:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/process_inv.ico">
+      <publishTime>02/16/2016 17:16:06</publishTime>
+    </File>
+    <File Include="Content/Images/profile.ico">
+      <publishTime>02/16/2016 18:10:34</publishTime>
+    </File>
+    <File Include="Content/Images/project.ico">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/qa_card.ico">
+      <publishTime>02/16/2016 16:53:50</publishTime>
+    </File>
+    <File Include="Content/Images/RedWineHeader.jpg">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/refresh.png">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/rejectcard.ico">
+      <publishTime>02/16/2016 16:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/SSS_logo_PH.svg_24x24.png">
+      <publishTime>02/18/2016 17:44:42</publishTime>
+    </File>
+    <File Include="Content/Images/SSS_logo_PH.svg_32x32.png">
+      <publishTime>02/18/2016 17:45:26</publishTime>
+    </File>
+    <File Include="Content/Images/status.ico">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/systemadmin.ico">
+      <publishTime>02/16/2016 18:09:08</publishTime>
+    </File>
+    <File Include="Content/Images/systemlog.ico">
+      <publishTime>02/16/2016 17:16:06</publishTime>
+    </File>
+    <File Include="Content/Images/systemparameter.ico">
+      <publishTime>03/07/2016 18:24:54</publishTime>
+    </File>
+    <File Include="Content/Images/upload.ico">
+      <publishTime>02/16/2016 16:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/user.png">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Images/xls.png">
+      <publishTime>02/12/2016 13:32:20</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>02/16/2016 15:43:16</publishTime>
+    </File>
+    <File Include="DataSet1.xsc">
+      <publishTime>08/13/2019 11:32:35</publishTime>
+    </File>
+    <File Include="DataSet1.xss">
+      <publishTime>08/13/2019 11:32:35</publishTime>
+    </File>
+    <File Include="DeliveryReceipt.aspx">
+      <publishTime>08/25/2016 11:25:06</publishTime>
+    </File>
+    <File Include="DeliveryReceiptByScan.aspx">
+      <publishTime>06/04/2019 18:31:14</publishTime>
+    </File>
+    <File Include="DeliveryReceiptExcludedList.aspx">
+      <publishTime>08/25/2016 12:13:58</publishTime>
+    </File>
+    <File Include="DownloadFile.aspx">
+      <publishTime>04/01/2016 11:52:14</publishTime>
+    </File>
+    <File Include="EditNamesAddress.aspx">
+      <publishTime>01/10/2019 13:21:37</publishTime>
+    </File>
+    <File Include="ErrorLogs.aspx">
+      <publishTime>02/17/2016 10:28:18</publishTime>
+    </File>
+    <File Include="ForUpload.aspx">
+      <publishTime>05/23/2016 17:07:48</publishTime>
+    </File>
+    <File Include="ForUpload2.aspx">
+      <publishTime>05/23/2016 17:01:44</publishTime>
+    </File>
+    <File Include="ForUpload_CMSReprint.aspx">
+      <publishTime>08/22/2016 15:31:48</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/04/2016 14:21:20</publishTime>
+    </File>
+    <File Include="Help.aspx">
+      <publishTime>04/01/2016 15:26:16</publishTime>
+    </File>
+    <File Include="Home_CPS.aspx">
+      <publishTime>12/06/2019 11:29:09</publishTime>
+    </File>
+    <File Include="IndigoDataForPrinting.aspx">
+      <publishTime>02/17/2016 10:32:32</publishTime>
+    </File>
+    <File Include="IndigoExtract.aspx">
+      <publishTime>01/14/2019 18:30:54</publishTime>
+    </File>
+    <File Include="Inventory/AddMaterialQty.aspx">
+      <publishTime>05/25/2016 11:24:26</publishTime>
+    </File>
+    <File Include="Inventory/AllotedMaterialsBreakdown.aspx">
+      <publishTime>02/18/2016 18:50:18</publishTime>
+    </File>
+    <File Include="Inventory/Home_Inventory.aspx">
+      <publishTime>02/22/2016 10:32:00</publishTime>
+    </File>
+    <File Include="Inventory/Inventory.aspx">
+      <publishTime>02/18/2016 18:47:04</publishTime>
+    </File>
+    <File Include="Inventory/Material.aspx">
+      <publishTime>02/16/2016 16:00:16</publishTime>
+    </File>
+    <File Include="Inventory/NewPOMatProcess.aspx">
+      <publishTime>11/18/2017 20:53:50</publishTime>
+    </File>
+    <File Include="Inventory/ProcessedPOMat.aspx">
+      <publishTime>03/27/2016 10:40:40</publishTime>
+    </File>
+    <File Include="Light.master">
+      <publishTime>01/04/2016 14:21:20</publishTime>
+    </File>
+    <File Include="LoggedUsers.aspx">
+      <publishTime>02/18/2016 17:51:42</publishTime>
+    </File>
+    <File Include="LogIn/css/animate.css">
+      <publishTime>01/28/2016 14:47:38</publishTime>
+    </File>
+    <File Include="LogIn/css/reset.css">
+      <publishTime>01/28/2016 14:47:38</publishTime>
+    </File>
+    <File Include="LogIn/css/styles.css">
+      <publishTime>03/18/2016 17:26:42</publishTime>
+    </File>
+    <File Include="LogIn/Login.aspx">
+      <publishTime>02/12/2018 10:34:03</publishTime>
+    </File>
+    <File Include="Logout.aspx">
+      <publishTime>01/28/2016 20:02:10</publishTime>
+    </File>
+    <File Include="Main.master">
+      <publishTime>05/15/2019 14:06:56</publishTime>
+    </File>
+    <File Include="MiscReports.aspx">
+      <publishTime>06/04/2019 18:31:14</publishTime>
+    </File>
+    <File Include="MiscTxn.aspx">
+      <publishTime>08/15/2016 14:52:32</publishTime>
+    </File>
+    <File Include="MsgPage.aspx">
+      <publishTime>03/04/2016 17:55:02</publishTime>
+    </File>
+    <File Include="PendingForProcess.aspx">
+      <publishTime>07/13/2016 21:14:58</publishTime>
+    </File>
+    <File Include="PendingForProcessSheet.aspx">
+      <publishTime>07/13/2016 21:16:04</publishTime>
+    </File>
+    <File Include="POReports.aspx">
+      <publishTime>07/31/2017 13:31:46</publishTime>
+    </File>
+    <File Include="PurgeData.aspx">
+      <publishTime>07/31/2017 11:44:42</publishTime>
+    </File>
+    <File Include="QA_GoodRejectTagging/ProcessedQAGoodReject.aspx">
+      <publishTime>03/30/2016 15:50:20</publishTime>
+    </File>
+    <File Include="QA_GoodRejectTagging/QAGoodRejectTagging.aspx">
+      <publishTime>06/07/2016 11:54:10</publishTime>
+    </File>
+    <File Include="QA_GoodRejectTagging/SearchSubmittedQAGoodReject.aspx">
+      <publishTime>03/30/2016 16:11:26</publishTime>
+    </File>
+    <File Include="QA_GoodRejectTagging/SubmittedQAGoodReject.aspx">
+      <publishTime>03/30/2016 15:41:02</publishTime>
+    </File>
+    <File Include="RejectCard.aspx">
+      <publishTime>07/13/2016 21:19:48</publishTime>
+    </File>
+    <File Include="ReportA_CreatedPrintOrderForm.aspx">
+      <publishTime>03/18/2016 13:35:24</publishTime>
+    </File>
+    <File Include="ReportD_DeliveryReceipt.aspx">
+      <publishTime>08/25/2016 11:41:08</publishTime>
+    </File>
+    <File Include="Role.aspx">
+      <publishTime>03/07/2016 18:16:00</publishTime>
+    </File>
+    <File Include="RoleActivity.aspx">
+      <publishTime>02/19/2016 16:18:34</publishTime>
+    </File>
+    <File Include="RoleModule.aspx">
+      <publishTime>03/26/2016 02:23:16</publishTime>
+    </File>
+    <File Include="Root.master">
+      <publishTime>02/12/2018 10:21:24</publishTime>
+    </File>
+    <File Include="Rpt/Inspection_QC_YieldReportForm.aspx">
+      <publishTime>06/02/2016 13:04:24</publishTime>
+    </File>
+    <File Include="Rpt/PDFViewer.aspx">
+      <publishTime>03/18/2016 09:55:08</publishTime>
+    </File>
+    <File Include="Rpt/RptViewer.aspx">
+      <publishTime>03/17/2016 17:56:36</publishTime>
+    </File>
+    <File Include="Rpt/SelectPurchaseOrder.aspx">
+      <publishTime>07/16/2016 11:11:32</publishTime>
+    </File>
+    <File Include="StatusCardBreakdown.aspx">
+      <publishTime>05/14/2016 15:01:12</publishTime>
+    </File>
+    <File Include="StatusCardByPO.aspx">
+      <publishTime>07/31/2017 11:44:00</publishTime>
+    </File>
+    <File Include="SystemLogs.aspx">
+      <publishTime>02/17/2016 11:04:02</publishTime>
+    </File>
+    <File Include="SystemModule.aspx">
+      <publishTime>02/17/2016 10:49:48</publishTime>
+    </File>
+    <File Include="SystemParameter.aspx">
+      <publishTime>03/21/2016 10:29:10</publishTime>
+    </File>
+    <File Include="TrackData.aspx">
+      <publishTime>07/15/2016 16:44:08</publishTime>
+    </File>
+    <File Include="UserRole.aspx">
+      <publishTime>02/16/2016 18:18:32</publishTime>
+    </File>
+    <File Include="Users.aspx">
+      <publishTime>03/07/2016 17:42:06</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/17/2020 10:56:34</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

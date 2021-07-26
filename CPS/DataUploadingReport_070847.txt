@@ -1,0 +1,72 @@
+START OF PROCESS : 1/18/2021 7:08:46 PM
+LBP DATA : 20201212_ALL_B1_BW_97
+---------------------------------------------------------------------------------------
+DUMPFILE SUMMARY - 20201217_987654
+---------------------------------------------------------------------------------------
+Demographic: 96/96, Photo: 96 / 96, Signature: 95 / 96, Lprimary: 95 / 96, Lbackup: 95 / 96, Rprimary: 95 / 96, Rbackup: 94 / 96
+
+**Large Photo/s - 51**
+02201402201143003047 - Exceeded 15360 chip encoding limit for photo
+02201404031029500466 - Exceeded 15360 chip encoding limit for photo
+02201407151020403071 - Exceeded 15360 chip encoding limit for photo
+02201410150914502683 - Exceeded 15360 chip encoding limit for photo
+02201410160742515231 - Exceeded 15360 chip encoding limit for photo
+02201410160850308523 - Exceeded 15360 chip encoding limit for photo
+02201410161079407535 - Exceeded 15360 chip encoding limit for photo
+02201410161155816663 - Exceeded 15360 chip encoding limit for photo
+02201410161161517389 - Exceeded 15360 chip encoding limit for photo
+02201410161180118135 - Exceeded 15360 chip encoding limit for photo
+02201503021020401318 - Exceeded 15360 chip encoding limit for photo
+02201503021022200868 - Exceeded 15360 chip encoding limit for photo
+02201503171020404335 - Exceeded 15360 chip encoding limit for photo
+02201505041155800101 - Exceeded 15360 chip encoding limit for photo
+02201506010917800347 - Exceeded 15360 chip encoding limit for photo
+02201506011022200185 - Exceeded 15360 chip encoding limit for photo
+02201508171104307441 - Exceeded 15360 chip encoding limit for photo
+02201509230793925714 - Exceeded 15360 chip encoding limit for photo
+02201509231020408081 - Exceeded 15360 chip encoding limit for photo
+02201509231030740159 - Exceeded 15360 chip encoding limit for photo
+02201509231159401249 - Exceeded 15360 chip encoding limit for photo
+02201509231162836148 - Exceeded 15360 chip encoding limit for photo
+02201509231180119745 - Exceeded 15360 chip encoding limit for photo
+02201509231195333229 - Exceeded 15360 chip encoding limit for photo
+02201511091177800245 - Exceeded 15360 chip encoding limit for photo
+02201608140878006912 - Exceeded 15360 chip encoding limit for photo
+02201608141180102725 - Exceeded 15360 chip encoding limit for photo
+02201608180917834843 - Exceeded 15360 chip encoding limit for photo
+02201608180918739939 - Exceeded 15360 chip encoding limit for photo
+02201608181155809193 - Exceeded 15360 chip encoding limit for photo
+02201608191169202193 - Exceeded 15360 chip encoding limit for photo
+02201609040858309870 - Exceeded 15360 chip encoding limit for photo
+02201609110850311177 - Exceeded 15360 chip encoding limit for photo
+02201609111180107970 - Exceeded 15360 chip encoding limit for photo
+02201609111180129848 - Exceeded 15360 chip encoding limit for photo
+02201611200758206277 - Exceeded 15360 chip encoding limit for photo
+02201611200878002283 - Exceeded 15360 chip encoding limit for photo
+02201611201149209103 - Exceeded 15360 chip encoding limit for photo
+02201701221113001134 - Exceeded 15360 chip encoding limit for photo
+02201701221195303217 - Exceeded 15360 chip encoding limit for photo
+02201707160858320478 - Exceeded 15360 chip encoding limit for photo
+02201707161050906759 - Exceeded 15360 chip encoding limit for photo
+02201707161177810532 - Exceeded 15360 chip encoding limit for photo
+02201707161195316146 - Exceeded 15360 chip encoding limit for photo
+02201707230728201699 - Exceeded 15360 chip encoding limit for photo
+02201707231043334350 - Exceeded 15360 chip encoding limit for photo
+02201707231202116751 - Exceeded 15360 chip encoding limit for photo
+02201708271169209025 - Exceeded 15360 chip encoding limit for photo
+02201807300918702156 - Exceeded 15360 chip encoding limit for photo
+02201811261111903378 - Exceeded 15360 chip encoding limit for photo
+02202010301020400454 - Exceeded 15360 chip encoding limit for photo
+
+**Zero byte file/s - 6**
+02201407151020403071 - Invalid/ Zero byte lbackup
+02201407151020403071 - Invalid/ Zero byte lprimary
+02201407151020403071 - Invalid/ Zero byte rbackup
+02201407151020403071 - Invalid/ Zero byte rprimary
+02201611200878002283 - Invalid/ Zero byte rbackup
+02201701221113001134 - Invalid/ Zero byte signature
+
+Exception/s
+CRN 021158460818 have no umid data
+
+END OF PROCESS : 1/18/2021 7:08:47 PM

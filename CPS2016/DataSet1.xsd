@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CardCarrier_PO" msprop:Generator_TableClassName="CardCarrier_PODataTable" msprop:Generator_TableVarName="tableCardCarrier_PO" msprop:Generator_TablePropName="CardCarrier_PO" msprop:Generator_RowDeletingName="CardCarrier_PORowDeleting" msprop:Generator_RowChangingName="CardCarrier_PORowChanging" msprop:Generator_RowEvHandlerName="CardCarrier_PORowChangeEventHandler" msprop:Generator_RowDeletedName="CardCarrier_PORowDeleted" msprop:Generator_UserTableName="CardCarrier_PO" msprop:Generator_RowChangedName="CardCarrier_PORowChanged" msprop:Generator_RowEvArgName="CardCarrier_PORowChangeEvent" msprop:Generator_RowClassName="CardCarrier_PORow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PurchaseOrder" msprop:Generator_ColumnVarNameInTable="columnPurchaseOrder" msprop:Generator_ColumnPropNameInRow="PurchaseOrder" msprop:Generator_ColumnPropNameInTable="PurchaseOrderColumn" msprop:Generator_UserColumnName="PurchaseOrder" type="xs:string" minOccurs="0" />
+              <xs:element name="PO_Barcode" msprop:Generator_ColumnVarNameInTable="columnPO_Barcode" msprop:Generator_ColumnPropNameInRow="PO_Barcode" msprop:Generator_ColumnPropNameInTable="PO_BarcodeColumn" msprop:Generator_UserColumnName="PO_Barcode" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Barcode" msprop:Generator_ColumnVarNameInTable="columnBarcode" msprop:Generator_ColumnPropNameInRow="Barcode" msprop:Generator_ColumnPropNameInTable="BarcodeColumn" msprop:Generator_UserColumnName="Barcode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PO_BarcodeCRN" msprop:Generator_ColumnVarNameInTable="columnPO_BarcodeCRN" msprop:Generator_ColumnPropNameInRow="PO_BarcodeCRN" msprop:Generator_ColumnPropNameInTable="PO_BarcodeCRNColumn" msprop:Generator_UserColumnName="PO_BarcodeCRN" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

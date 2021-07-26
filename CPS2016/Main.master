@@ -1,0 +1,216 @@
+<%@ Master Language="VB" MasterPageFile="~/Root.master" AutoEventWireup="true" CodeBehind="Main.master.vb" Inherits="CPS2016.MainMaster" %>
+
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxSplitter" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxNavBar" TagPrefix="dx" %>
+
+<%-- DXCOMMENT: Page Main.master is a master page that contains central area layout --%>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">   
+    <dx:ASPxSplitter ID="ContentSplitter" runat="server" Width="100%" Height="100%">
+
+<ClientSideEvents PaneResized="function(s, e) { 
+            if(window.ASPxGridView1 &amp;&amp; e.pane.name == &#39;ContentCenter&#39;)
+                ASPxGridView1.SetHeight(e.pane.GetClientHeight());
+            }"></ClientSideEvents>
+
+                <Panes>
+                    <dx:SplitterPane Name="ContentLeft" ShowCollapseBackwardButton="True" 
+                        Size="12%">
+                        <PaneStyle CssClass="leftPane">
+                            <Paddings Padding="1px" />
+<Paddings Padding="1px"></Paddings>
+                        </PaneStyle>
+                        <ContentCollection>
+                            <dx:SplitterContentControl ID="SplitterContentControl1" runat="server">
+                                <div class="leftPanel">
+                                    <dx:ASPxNavBar ID="ASPxNavBar1" runat="server" 
+                                        EnableAnimation="True" Width="100%" EnableTheming="True" 
+                                        Theme="Office2010Blue">
+                                        <Groups>
+                                            <dx:NavBarGroup Text="PROCESS" ShowExpandButton="False">
+                                                <Items>
+                                                    <dx:NavBarItem Name="nbiForUpload" NavigateUrl="ForUpload.aspx?FromNavMenu=1" Text=" Upload PO">
+                                                        <Image Url="~/Content/Images/upload.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>                                                                                                     
+                                                    <dx:NavBarItem NavigateUrl="IndigoExtract.aspx?FromNavMenu=1" Text=" Indigo Extract">
+                                                        <Image 
+                                                            Url="~/Content/Images/indigoextract.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>
+                                                    <dx:NavBarItem NavigateUrl="ChangeStatusByList.aspx?FromNavMenu=1" Text=" Reject ProcessLog">
+                                                        <Image 
+                                                            Url="~/Content/Images/indigoextract.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>
+                                                    <dx:NavBarItem NavigateUrl="PendingForProcess.aspx?FromNavMenu=1" Text=" Process Card">
+                                                        <Image 
+                                                            Url="~/Content/Images/processcard.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>
+                                                    <dx:NavBarItem NavigateUrl="PendingForProcessSheet.aspx?FromNavMenu=1" Text=" Process Sheet">
+                                                        <Image 
+                                                            Url="~/Content/Images/processcard.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>
+                                                    <dx:NavBarItem NavigateUrl="RejectCard.aspx?FromNavMenu=1" Text=" Reject Card">
+                                                        <Image 
+                                                            Url="~/Content/Images/rejectcard.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>
+                                                    <dx:NavBarItem NavigateUrl="DownloadFile.aspx" Text=" Download">
+                                                        <Image IconID="actions_download_16x16">
+                                                        </Image>
+                                                    </dx:NavBarItem>
+                                                    <dx:NavBarItem NavigateUrl="QA_GoodRejectTagging/ProcessedQAGoodReject.aspx?FromNavMenu=1" Text=" Cust. Return Tagger">
+                                                        <Image 
+                                                            Url="~/Content/Images/qa_card.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>
+                                                    <dx:NavBarItem Name="nbiCMSReprint" NavigateUrl="CMSReprint.aspx?FromNavMenu=1" Text=" CMS Reprint">
+                                                        <Image Url="~/Content/Images/upload.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>
+                                                     <dx:NavBarItem Name="nbiForUploadCDFR" NavigateUrl="CDFR/ForUploadCDFR.aspx?FromNavMenu=1" Text=" Upload CDFR">
+                                                        <Image Url="~/Content/Images/upload.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem> 
+                                                    <dx:NavBarItem Name="nbiForUploadCMSReject" NavigateUrl="CMS/ForUploadCMSReject.aspx?FromNavMenu=1" Text=" Upload Reject for CMS">
+                                                        <Image Url="~/Content/Images/upload.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem> 
+                                                </Items>
+                                            </dx:NavBarGroup>
+                                            <dx:NavBarGroup Expanded="False" Text="TRACKING" ShowExpandButton="False">
+                                                <Items>
+                                                    <dx:NavBarItem NavigateUrl="TrackData.aspx?FromNavMenu=1" Text=" Search">
+                                                        <Image IconID="find_findbyid_16x16">
+                                                        </Image>
+                                                    </dx:NavBarItem>                                                    
+                                                </Items>
+                                            </dx:NavBarGroup>
+                                            <dx:NavBarGroup Expanded="False" Text="DELIVERY" ShowExpandButton="False">
+                                                <Items>
+                                                    <dx:NavBarItem NavigateUrl="PurgeData.aspx?FromNavMenu=1" Text=" Process">
+                                                        <Image 
+                                                            Url="~/Content/Images/data_delete.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>                                                    
+                                                </Items>
+                                            </dx:NavBarGroup>
+                                            <dx:NavBarGroup Expanded="False" Text="ADMINISTRATION" ShowExpandButton="False">
+                                                <Items>
+                                                    <dx:NavBarItem NavigateUrl="LoggedUsers.aspx?FromNavMenu=1" Text=" Logged Users">
+                                                        <Image Url="~/Content/Images/onlineuser.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>                                                     
+<dx:NavBarItem NavigateUrl="SystemParameter.aspx?FromNavMenu=1" Text=" System Parameter">
+<Image Url="~/Content/Images/systemparameter.ico"></Image>
+</dx:NavBarItem>
+                                                </Items>
+                                                <Items>
+                                                    <dx:NavBarItem NavigateUrl="SystemParameter.aspx?FromNavMenu=1" Text=" System Parameter">
+                                                        <Image Url="~/Content/Images/systemparameter.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>                                                    
+                                                </Items>
+                                            </dx:NavBarGroup>
+                                            <dx:NavBarGroup Expanded="False" Text="INVENTORY" ShowExpandButton="False">
+                                                <Items>
+                                                    <dx:NavBarItem NavigateUrl="Inventory/Home_Inventory.aspx?FromNavMenu=1" Text=" Home">
+                                                        <Image IconID="navigation_home_16x16">
+                                                        </Image>
+                                                    </dx:NavBarItem>                                                    
+                                                    <dx:NavBarItem NavigateUrl="Inventory/Inventory.aspx?FromNavMenu=1" Text=" Inventory">
+                                                        <Image 
+                                                            Url="~/Content/Images/inventory.ico">
+                                                        </Image></dx:NavBarItem>
+                                                    <dx:NavBarItem NavigateUrl="Inventory/ProcessedPOMat.aspx?FromNavMenu=1" Text=" Processed">
+                                                        <Image Url="~/Content/Images/process_inv.ico">
+                                                        </Image></dx:NavBarItem> 
+                                                    <dx:NavBarItem NavigateUrl="Inventory/Material.aspx" Text=" Material">
+                                                        <Image Url="~/Content/Images/material.ico">
+                                                     </Image>
+                                                    </dx:NavBarItem>                                                                                                       
+                                                </Items>
+                                            </dx:NavBarGroup>
+                                            <dx:NavBarGroup Expanded="False" Text="SYSTEM LOGS" ShowExpandButton="False">
+                                                <Items>
+                                                    <dx:NavBarItem NavigateUrl="SystemLogs.aspx?FromNavMenu=1" Text=" System Log">
+                                                        <Image Url="~/Content/Images/systemlog.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>  
+                                                    <dx:NavBarItem NavigateUrl="ErrorLogs.aspx?FromNavMenu=1" Text=" Error Log">
+                                                        <Image Url="~/Content/Images/errorlog.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>                                                     
+                                                </Items>
+                                            </dx:NavBarGroup> 
+                                            <dx:NavBarGroup Expanded="False" Text="REPORTS" ShowExpandButton="False">
+                                                <Items>
+                                                    <dx:NavBarItem NavigateUrl="POReports.aspx?FromNavMenu=1" Text=" PO Reports">
+                                                        <Image Url="~/Content/Images/systemlog.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>
+                                                    <dx:NavBarItem NavigateUrl="MiscReports.aspx?FromNavMenu=1" Text=" Misc. Reports">
+                                                        <Image Url="~/Content/Images/systemlog.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>  
+                                                    <dx:NavBarItem NavigateUrl="DeliveryReceipt.aspx?FromNavMenu=1" Text=" Delivery Receipt">
+                                                        <Image Url="~/Content/Images/systemlog.ico">
+                                                        </Image>
+                                                    </dx:NavBarItem>                                                                                                       
+                                                </Items>
+                                            </dx:NavBarGroup>                                                                                                                      
+                                        </Groups>
+                                        <Paddings Padding="0px" />
+                                        <Border BorderWidth="0px" />
+
+<Paddings Padding="0px"></Paddings>
+
+<Border BorderWidth="0px"></Border>
+                                    </dx:ASPxNavBar>
+                                </div>
+                            </dx:SplitterContentControl>
+                        </ContentCollection>
+                    </dx:SplitterPane>
+                    <dx:SplitterPane Name="ContentCenter" ScrollBars="Auto">
+                        <Separator Visible="True">
+                            <SeparatorStyle>
+                            <Border BorderWidth="1px" />
+                            <BorderTop BorderWidth="0px" />
+<Border BorderWidth="1px"></Border>
+
+<BorderTop BorderWidth="0px"></BorderTop>
+                            </SeparatorStyle>
+                        </Separator>
+                        <PaneStyle CssClass="contentPane">
+                        </PaneStyle>
+                        <ContentCollection>
+                            <dx:SplitterContentControl ID="SplitterContentControl2" runat="server">
+                                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </dx:SplitterContentControl>
+                        </ContentCollection>
+                    </dx:SplitterPane>
+                </Panes>
+                <ClientSideEvents PaneResized="function(s, e) { 
+            if(window.ASPxGridView1 && e.pane.name == 'ContentCenter')
+                ASPxGridView1.SetHeight(e.pane.GetClientHeight());
+            }" />
+
+                <Styles>
+            <Pane>
+                <Paddings Padding="0px" />
+                <Border BorderWidth="0px" />
+<Paddings Padding="0px"></Paddings>
+
+<Border BorderWidth="0px"></Border>
+            </Pane>
+        </Styles>
+    </dx:ASPxSplitter>
+    
+<%-- DXCOMMENT: Configure a datasource for the left panel's ASPxNavBar --%>
+
+    
+</asp:Content>

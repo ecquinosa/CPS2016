@@ -1,0 +1,158 @@
+<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Root.master.vb" Inherits="CPS2016.RootMaster" %>
+
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxSplitter" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxMenu" TagPrefix="dx" %>
+
+<%-- DXCOMMENT: Page Root.master is a master page that contains the root layout (it includes Header, Cental Area, and Footer) --%>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Allcard Card Production System - SSS</title>
+    <link rel="stylesheet" type="text/css" href="Content/Site.css" />    
+    <style type="text/css">
+        .style1
+        {
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body runat="server" id="Body">
+    <form id="form1" runat="server">
+    <dx:ASPxSplitter ID="ASPxSplitter1" runat="server" AllowResize="False" Orientation="Vertical"
+        FullscreenMode="True" SeparatorVisible="False" Height="100%" Width="100%" 
+        Font-Size="X-Small">
+        <Styles>
+            <Pane>
+                <Paddings Padding="0px" />
+                <Border BorderWidth="0px" />
+<Paddings Padding="0px"></Paddings>
+
+<Border BorderWidth="0px"></Border>
+            </Pane>
+        </Styles>
+        <Panes>
+            <dx:SplitterPane Name="Header" Size="83px" MinSize="83px">
+                <PaneStyle CssClass="headerPane">
+                    <BorderBottom BorderWidth="1px" />
+<BorderBottom BorderWidth="1px"></BorderBottom>
+                </PaneStyle>
+                <ContentCollection>
+                    <dx:SplitterContentControl ID="SplitterContentControl1" runat="server">
+                        <div class="headerTop">
+                            <div class="templateTitle">
+                                <a id="TitleLink" href="Home_CPS.aspx" runat="server" 
+                                    
+                                    
+                                    style="font-family: Tahoma; font-weight: bold; color: #003300; font-size: 25px;" 
+                                    class="style1">ALLCARD CARD PRODUCTION SYSTEM</a>                               
+                            </div>                            
+                            <div style="float: left; margin-left: 10px; margin-top: 10px;">
+                                <asp:Image ID="Image1" runat="server" 
+                                    ImageUrl="~/Content/Images/SSS_logo_PH.svg_32x32.png" /></div>
+                        </div>                        
+                        <div class="headerMenu" style="margin-top: 5px">
+                            <%-- DXCOMMENT: Configure the header menu --%>
+                            <dx:ASPxMenu ID="ASPxMenu1" runat="server" runat="server" ItemAutoWidth="False" 
+                                RenderMode="Lightweight" Width="100%" Height="30px">
+                                <Items>
+                                    <dx:MenuItem Text="Home" NavigateUrl="Home_CPS.aspx?FromNavMenu=1">
+                                        <Image IconID="navigation_home_16x16">
+                                        </Image>
+                                    </dx:MenuItem>
+                                    <dx:MenuItem Text="Card Control" NavigateUrl="CardControl.aspx?FromNavMenu=1">
+                                        <Image IconID="actions_show_16x16">
+                                        </Image>
+                                    </dx:MenuItem>
+                                    <dx:MenuItem Text="System Administration">
+                                        <Items>
+                                            <dx:MenuItem NavigateUrl="Users.aspx?FromNavMenu=1" Text="User">
+                                                <Image IconID="people_employee_16x16">
+                                                </Image>
+                                            </dx:MenuItem>
+                                            <dx:MenuItem NavigateUrl="Role.aspx?FromNavMenu=1" Text="Role">
+                                                <Image IconID="people_usergroup_16x16">
+                                                </Image>
+                                            </dx:MenuItem>
+                                            <dx:MenuItem NavigateUrl="SystemModule.aspx?FromNavMenu=1" Text="Module">
+                                                <Image Url="Content/Images/module.ico">
+                                                </Image>
+                                            </dx:MenuItem>
+                                        </Items>
+                                        <Image Url="~/Content/Images/systemadmin.ico">
+                                        </Image>
+                                    </dx:MenuItem>
+                                    <dx:MenuItem Text="Profile">
+                                        <Items>
+                                            <dx:MenuItem NavigateUrl="Help.aspx" Text="Help">
+                                                <Image IconID="people_usergroup_16x16">
+                                                </Image>
+                                            </dx:MenuItem>
+                                            <dx:MenuItem NavigateUrl="ChangePassword.aspx" Text="Change password">
+                                                <Image Url="Content/Images/changepassword.ico">
+                                                </Image>
+                                            </dx:MenuItem>
+                                            <dx:MenuItem NavigateUrl="Logout.aspx" Text="Logout">
+                                                <Image Url="Content/Images/logout.ico">
+                                                </Image>
+                                            </dx:MenuItem>
+                                        </Items>
+                                        <Image Url="~/Content/Images/profile.ico">
+                                        </Image>
+                                    </dx:MenuItem>
+                                </Items>
+                             <Border BorderWidth="1px" />
+</dx:ASPxMenu>
+                            
+                        </div>
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+            </dx:SplitterPane>
+            <dx:SplitterPane Name="Content" MinSize="375px">
+                <PaneStyle CssClass="mainContentPane">
+<BorderBottom BorderWidth="1px"></BorderBottom>
+                </PaneStyle>
+                <ContentCollection>
+                    <dx:SplitterContentControl ID="SplitterContentControl3" runat="server">
+                        <asp:ContentPlaceHolder ID="Content" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+                <PaneStyle BackColor="white">
+                    <BorderBottom BorderWidth="1px" />
+                </PaneStyle>
+            </dx:SplitterPane>
+
+            <dx:SplitterPane Name="Footer" Size="50px" PaneStyle-CssClass="footerPane">
+<PaneStyle CssClass="footerPane"></PaneStyle>
+                <ContentCollection>
+                    <dx:SplitterContentControl ID="SplitterContentControl4" runat="server">
+                        <div class="footerMenu">
+                            <div style="width: 247px; float: left; padding-top: 5px;"><dx:ASPxLabel ID="ASPxLabel2" runat="server" Theme="Office2010Blue"></dx:ASPxLabel></div>
+                            <div style="width: 308px; float: left; padding-top: 5px;">
+                                <dx:ASPxLabel ID="ASPxLabel4" runat="server" 
+                                    Theme="Office2010Blue"></dx:ASPxLabel></div>
+                            <div style="width: 416px; float: left; padding-top: 5px;">
+                                <dx:ASPxLabel ID="ASPxLabel3" runat="server" 
+                                    Theme="Office2010Blue" Width="400px"></dx:ASPxLabel></div>                            
+                             <dx:ASPxLabel ID="ASPxLabel5" runat="server" Theme="Office2010Blue" Width="400px">
+                            </dx:ASPxLabel>
+                             <br />                             
+                             <div style="width: 90%; float: left;">
+                             <div style="width: 50%; float: left; padding-top: 5px;"><dx:ASPxLabel ID="aspxLblCopyright" runat="server" Theme="Office2010Blue" 
+                                     ForeColor="#999999">
+                            </dx:ASPxLabel></div>                                               
+                            </div>
+                        </div>                        
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+            </dx:SplitterPane>
+        </Panes>
+    </dx:ASPxSplitter>
+    
+<%-- DXCOMMENT: Configure the header menu --%>
+
+    
+    </form>
+</body>
+</html>
